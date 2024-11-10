@@ -1,0 +1,10 @@
+[Unit]
+Description=Battery-notif timer
+
+[Timer]
+OnBootSec=5s
+OnUnitActiveSec=5s
+AccuracySec=1us
+
+[Install]
+WantedBy=battery-notif.service

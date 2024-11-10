@@ -1,0 +1,11 @@
+[Unit]
+Description=Battery Notifications
+Requires=battery-notif.timer
+
+[Service]
+Environment="DISPLAY:0" "XAUTHORITY=$HOME/.Xauthority"
+ExecStart=/usr/local/bin/battery-notif.sh
+
+[Install]
+Also=battery-notif.timer
+WantedBy=default.target
